@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdujebar | Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="mt-3">Loading Portfolio...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2"></i>Abdujebar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-2" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-3">
+                            Hello, I'm <span class="text-primary typed-text"></span>
+                        </h1>
+                        <p class="lead mb-4">Information Science Student at Haramaya University</p>
+                        <p class="mb-4">Passionate about technology, data management, and creating digital solutions that make a difference.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-envelope me-2"></i>Contact Me
+                            </a>
+                            <a href="#projects" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-eye me-2"></i>View Work
+                            </a>
+                        </div>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-link me-3"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link me-3"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:abdujebar@example.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image text-center">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="floating-elements">
+                                <div class="floating-icon" style="--delay: 0s;"><i class="fas fa-code"></i></div>
+                                <div class="floating-icon" style="--delay: 1s;"><i class="fas fa-database"></i></div>
+                                <div class="floating-icon" style="--delay: 2s;"><i class="fas fa-laptop-code"></i></div>
+                                <div class="floating-icon" style="--delay: 3s;"><i class="fas fa-chart-line"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Get to know more about my journey and aspirations</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3 class="mb-4">Passionate Information Science Student</h3>
+                        <p class="mb-4">
+                            I am Abdujebar, an Information Science student at Haramaya University with a deep passion for 
+                            information technology, data management, and web development. My academic journey has equipped 
+                            me with a strong foundation in digital solutions and problem-solving.
+                        </p>
+                        <p class="mb-4">
+                            I believe in the power of technology to transform lives and communities. My goal is to build 
+                            innovative solutions that bridge the gap between complex data and meaningful insights.
+                        </p>
+                        <div class="about-stats row">
+                            <div class="col-6 col-md-3 text-center mb-3">
+                                <div class="stat-item">
+                                    <h4 class="stat-number" data-count="3">0</h4>
+                                    <p class="stat-label">Years of Study</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-3">
+                                <div class="stat-item">
+                                    <h4 class="stat-number" data-count="15">0</h4>
+                                    <p class="stat-label">Projects</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-3">
+                                <div class="stat-item">
+                                    <h4 class="stat-number" data-count="8">0</h4>
+                                    <p class="stat-label">Technologies</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 text-center mb-3">
+                                <div class="stat-item">
+                                    <h4 class="stat-number" data-count="100">0</h4>
+                                    <p class="stat-label">% Dedication</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="tech-badges">
+                                <span class="badge bg-primary">Information Science</span>
+                                <span class="badge bg-success">Web Development</span>
+                                <span class="badge bg-info">Data Management</span>
+                                <span class="badge bg-warning">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Technologies I work with and continuously learning</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h4 class="mb-4">Technical Skills</h4>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>HTML & CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Database Management</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Problem Solving</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" data-width="90"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h4 class="mb-4">Technology Stack</h4>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>System Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A showcase of my recent work and academic projects</p>
+                </div>
+            </div>
+            
+            <!-- Project Filter -->
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="project-filter">
+                        <button class="btn btn-outline-primary active" data-filter="all">All Projects</button>
+                        <button class="btn btn-outline-primary" data-filter="web">Web Development</button>
+                        <button class="btn btn-outline-primary" data-filter="database">Database</button>
+                        <button class="btn btn-outline-primary" data-filter="academic">Academic</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row project-grid">
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="database academic" data-aos="fade-up">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <i class="fas fa-users-cog"></i>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Student Information System</h5>
+                            <p>A comprehensive system to manage student data with advanced features for data organization and retrieval.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Database</span>
+                                <span class="badge bg-success">SQL</span>
+                                <span class="badge bg-info">System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <i class="fas fa-globe"></i>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Responsive Portfolio Website</h5>
+                            <p>A modern, responsive portfolio website built with HTML, CSS, JavaScript, and Bootstrap framework.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-warning">HTML</span>
+                                <span class="badge bg-info">CSS</span>
+                                <span class="badge bg-success">JavaScript</span>
+                                <span class="badge bg-primary">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="database academic" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card h-100">
+                        <div class="project-image">
+                            <i class="fas fa-book"></i>
+                            <div class="project-overlay">
+                                <a href="#" class="btn btn-light btn-sm me-2" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Library Management System</h5>
+                            <p>An advanced library management system with user authentication, book tracking, and reporting features.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">Database</span>
+                                <span class="badge bg-success">Management</span>
+                                <span class="badge bg-warning">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Education & Achievements</h2>
+                    <p class="section-subtitle">My academic journey and accomplishments</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-right">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>BSc in Information Science</h4>
+                                    <span class="timeline-date">2024 - 2027</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <h6>Haramaya University</h6>
+                                    <p>Currently pursuing a Bachelor's degree in Information Science with focus on:</p>
+                                    <ul>
+                                        <li>Database Management Systems</li>
+                                        <li>Web Development Technologies</li>
+                                        <li>Information Systems Analysis</li>
+                                        <li>Data Structures and Algorithms</li>
+                                        <li>Software Engineering Principles</li>
+                                    </ul>
+                                    <div class="achievement-badges mt-3">
+                                        <span class="badge bg-success">Dean's List</span>
+                                        <span class="badge bg-primary">Academic Excellence</span>
+                                        <span class="badge bg-info">Research Project</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item" data-aos="fade-left">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>High School Diploma</h4>
+                                    <span class="timeline-date">2020 - 2023</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <h6>Secondary Education</h6>
+                                    <p>Completed secondary education with strong performance in:</p>
+                                    <ul>
+                                        <li>Mathematics and Sciences</li>
+                                        <li>Computer Studies</li>
+                                        <li>English Language</li>
+                                    </ul>
+                                    <div class="achievement-badges mt-3">
+                                        <span class="badge bg-warning">Honor Roll</span>
+                                        <span class="badge bg-success">Science Award</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's connect and discuss opportunities</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-4 mb-4" data-aos="fade-up">
+                            <div class="contact-item text-center">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h5>Email</h5>
+                                <p>abdujebar@example.com</p>
+                                <a href="mailto:abdujebar@example.com" class="btn btn-outline-primary btn-sm">Send Email</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-item text-center">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <h5>Phone</h5>
+                                <p>+251 9XX XXX XXX</p>
+                                <a href="tel:+2519XXXXXXX" class="btn btn-outline-primary btn-sm">Call Now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-item text-center">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <h5>Location</h5>
+                                <p>Haramaya University<br>Ethiopia</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Map</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="row mt-5">
+                        <div class="col-12" data-aos="fade-up">
+                            <div class="contact-form">
+                                <h4 class="text-center mb-4">Send Me a Message</h4>
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="row mt-5">
+                        <div class="col-12 text-center" data-aos="fade-up">
+                            <h5 class="mb-3">Connect With Me</h5>
+                            <div class="social-links-large">
+                                <a href="#" class="social-link-large me-3">
+                                    <i class="fab fa-github"></i>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="#" class="social-link-large me-3">
+                                    <i class="fab fa-linkedin"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="#" class="social-link-large me-3">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                                <a href="#" class="social-link-large">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Abdujebar. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> by Abdujebar</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="projectModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Student Information System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="project-details">
+                        <div class="project-image-large mb-4">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h6>Project Overview</h6>
+                        <p>A comprehensive student information management system designed to handle student data efficiently. The system includes features for student registration, grade management, and academic reporting.</p>
+                        
+                        <h6>Key Features</h6>
+                        <ul>
+                            <li>Student registration and profile management</li>
+                            <li>Grade tracking and GPA calculation</li>
+                            <li>Course enrollment system</li>
+                            <li>Academic reporting and analytics</li>
+                            <li>User authentication and authorization</li>
+                        </ul>
+                        
+                        <h6>Technologies Used</h6>
+                        <div class="tech-badges">
+                            <span class="badge bg-primary me-2">Database Design</span>
+                            <span class="badge bg-success me-2">SQL</span>
+                            <span class="badge bg-info me-2">System Analysis</span>
+                            <span class="badge bg-warning">Data Modeling</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-primary">View on GitHub</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
